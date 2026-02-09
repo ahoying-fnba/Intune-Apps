@@ -1,0 +1,74 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#deviceAppManagement/mobileApps/$entity",
+    "@odata.type": "#microsoft.graph.win32LobApp",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET deviceAppManagement/mobileApps('<guid>')?$select=createdDateTime,description",
+    "id": "e27e816e-764a-4249-a4c4-9f46d646c475",
+    "displayName": "Adobe Reader DC",
+    "description": "With Acrobat Reader you can open, read and print PDFs, and fill out PDF forms.",
+    "publisher": "Adobe",
+    "createdDateTime": "2025-12-31T17:00:47.9613343Z",
+    "lastModifiedDateTime": "2026-02-09T15:28:02.9819043Z",
+    "isFeatured": false,
+    "privacyInformationUrl": null,
+    "informationUrl": "https://get.adobe.com/reader/",
+    "owner": "",
+    "developer": "Adobe",
+    "notes": "https://fnba.atlassian.net/wiki/spaces/ITS/pages/1826488321/",
+    "publishingState": "published",
+    "committedContentVersion": "6",
+    "fileName": "install.intunewin",
+    "size": 680596544,
+    "installCommandLine": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\\install.ps1",
+    "uninstallCommandLine": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\\uninstall.ps1",
+    "applicableArchitectures": "x86,x64",
+    "allowedArchitectures": null,
+    "minimumFreeDiskSpaceInMB": null,
+    "minimumMemoryInMB": null,
+    "minimumNumberOfProcessors": null,
+    "minimumCpuSpeedInMHz": null,
+    "msiInformation": null,
+    "setupFilePath": "AcroRdrDC2500120997_en_US.exe",
+    "minimumSupportedWindowsRelease": "Windows11_21H2",
+    "largeIcon": {
+        "type": "image/png",
+        "value":
+    },
+    "rules": [
+        {
+            "@odata.type": "#microsoft.graph.win32LobAppFileSystemRule",
+            "ruleType": "detection",
+            "path": "C:\\Program Files (x86)\\Adobe\\Acrobat Reader DC\\",
+            "fileOrFolderName": "Reader",
+            "check32BitOn64System": false,
+            "operationType": "exists",
+            "operator": "notConfigured",
+            "comparisonValue": null
+        }
+    ],
+    "installExperience": {
+        "runAsAccount": "system",
+        "deviceRestartBehavior": "allow"
+    },
+    "returnCodes": [
+        {
+            "returnCode": 0,
+            "type": "success"
+        },
+        {
+            "returnCode": 1707,
+            "type": "success"
+        },
+        {
+            "returnCode": 3010,
+            "type": "softReboot"
+        },
+        {
+            "returnCode": 1641,
+            "type": "hardReboot"
+        },
+        {
+            "returnCode": 1618,
+            "type": "retry"
+        }
+    ]
+}

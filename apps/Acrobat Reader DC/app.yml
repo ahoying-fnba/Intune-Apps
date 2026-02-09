@@ -1,0 +1,5 @@
+name: Adobe Reader DC
+version: 25.001.21111
+install: powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
+uninstall: powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\uninstall.ps1
+detection: File C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader
