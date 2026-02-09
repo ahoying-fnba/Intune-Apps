@@ -1,0 +1,22 @@
+# Changelog
+
+All notable changes to this Intune application package are documented here.
+
+## [Unreleased]
+- 
+
+## [1.0.0] - 2026-02-09
+### Added
+- Initial Intune Win32 app package
+- Install, uninstall, and detection scripts
+- App manifest (`app.yml`)
+
+### Changed
+- 
+
+### Fixed
+- 
+
+### Notes
+- Packaged by: Andrew Hoying
+- Source installer: https://vendor.example.com
